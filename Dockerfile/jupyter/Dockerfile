@@ -11,4 +11,4 @@ RUN pip install matplotlib
 RUN pip install pandas
 RUN pip install jupyterlab
 
-ENTRYPOINT [ "jupyter lab --no-browser --ip="0.0.0.0" --port 8888  --allow-root --NotebookApp.token=''" ]
+ENTRYPOINT jupyter lab --no-browser --ip="0.0.0.0" --port 8888  --allow-root --NotebookApp.token=''
